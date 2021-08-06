@@ -620,7 +620,7 @@ Payloads connus parce que classiques sur metasploit. -- Encrypting Better Than E
 
 # IV - Hack the Box
 ### Installation
-Se connecter au VPN [tuto](httpswww.youtube.comwatchv=msCWpKegNlc)
+Se connecter au VPN [tuto](https://www.youtube.com/watch?v=msCWpKegNlc)
 
 ```
 sudo apt-get install network-manager-openvpn
