@@ -33,7 +33,7 @@
 
 
 # I - Linux Fundamentals
-- [cours openclassroom](httpsopenclassrooms.comfrcourses43538-reprenez-le-controle-a-laide-de-linux38351-la-structure-des-dossiers-et-fichiers)
+- [cours openclassroom](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/38351-la-structure-des-dossiers-et-fichiers)
 ### Les utilisateurs et les droits
 Linux est un système multi-utilisateurs = plusieurs personnes peuvent travailler simultanément sur le même OS, en s'y connectant à distance notamment
 
@@ -176,11 +176,11 @@ netstat
 - Avoir un pare-feu ne vous prémunit pas contre les virus. En revanche, cela rend la tâche particulièrement difficile aux pirates qui voudraient accéder à votre machine.
 - voir toutes les regles de config sur openclassroom
 
-- [Tryhackme](httpstryhackme.comroomlinuxfundamentalspart1)
+- [Tryhackme](https://tryhackme.com/room/linuxfundamentalspart1)
 
 # II - Network Fundamentals
-- [Tryhackme](httpstryhackme.compaths)
-- [openclassroom](httpsopenclassrooms.comfrcourses857447-apprenez-le-fonctionnement-des-reseaux-tcp-ip853038-le-materiel-de-couche-2-le-commutateur)
+- [Tryhackme](https://tryhackme.com/paths)
+- [openclassroom](https://openclassrooms.com/fr/courses/857447-apprenez-le-fonctionnement-des-reseaux-tcp-ip/853038-le-materiel-de-couche-2-le-commutateur)
 
 ### OSI Model
 Le modèle OSI est une norme qui préconise comment les ordinateurs devraient communiquer entre eux. Modèle a 7 couches. Pour communiquer par courrier il faut un émetteur, récepteur, support de transmission (lettre) etc. Les chercheurs ont imaginé 7 éléments a mettre en place pour communiquer sur internet.
@@ -313,8 +313,8 @@ Elle est là pour représenter les applications pour lesquelles nous allons mett
 
 
 # III - Offensive Pentesting
-- [Certification CEH v11](httpsbookshelf.vitalsource.com#books9781635675337cfi112!44@0.0036.5)
-- [Tryhackme](httpstryhackme.compaths)
+- [Certification CEH v11](https://bookshelf.vitalsource.com/#/books/9781635675337/cfi/112!/4/4@0.00:36.5)
+- [Tryhackme](https://tryhackme.com/paths)
 
 ### Attaques
 
@@ -358,14 +358,14 @@ hostname -I #sous linux pour laddr IP privee
 lsof -Pn -i4 #voir mes ports ouvert sur mac
 ````
 
-si je suis sur VM attention reglages reseau [explication](httpschrtophe.developpez.comtutorielsgestion-reseau-machine-virtuelle)
+si je suis sur VM attention reglages reseau [explication](https://chrtophe.developpez.com/tutoriels/gestion-reseau-machine-virtuelle/)
 - soit jutilise le LAN (et j'ai addresse IP de type 10.0.2.2)
 - soit j'utilise un pont avec ma machine hote. Dans ce mode, la carte réseau virtuelle est « pontée » à une carte réseau physique de l’hôte. Cette carte réseau aura donc 2 adresses IP, une dédiée à l'hôte et l'autre dédiée à la machine virtuelle. 
 
 
-[calculateur ip et infos](httpwww.hobbesworld.comreseauxcalcip.php#gene) 
+[calculateur ip et infos](https://www.hobbesworld.com/reseaux/calcip.php#gene) 
 
-[CIDR masque de sous-reseau](httpsfr.wikipedia.orgwikiSous-r%C3%A9seau)
+[CIDR masque de sous-reseau](https://fr.wikipedia.org/wiki/Sous-r%C3%A9seau)
 
 
 ####  Scanning
@@ -374,7 +374,7 @@ si je suis sur VM attention reglages reseau [explication](httpschrtophe.developp
 -------------------------
  Répertorie les ports et services ouverts. L'analyse des ports consiste à se connecter ou à sonder les ports TCP et UDP du système cible pour déterminer si les services sont en cours d'exécution ou sont en état d'écoute. L'état d'écoute fournit des informations sur l'OS (=fingerprinting) et l'application en cours d'utilisation. Parfois, les services actifs à l'écoute peuvent permettre à des utilisateurs non autorisés de mal configurer les systèmes ou d'exécuter des logiciels présentant des vulnérabilités.  Répertorie les hôtes actifs et les adresses IP. Affiche la présence de faiblesses connues. Un scanner de vulnérabilité se compose d'un moteur d'analyse et d'un catalogue. Le catalogue comprend une liste de fichiers communs avec des vulnérabilités connues et des exploits communs pour une gamme de serveurs. les ports sont les portes et les fenêtres d'un système qu'un intrus utilise pour y accéder.
 
-[doc de reference nmap](httpsnmap.orgmanfrindex.html)
+[doc de reference nmap](https://nmap.org/man/fr/index.html)
 `````
 ####sur l'outil nmap  
 outil open source d'exploration réseau, a été conçu pour rapidement scanner de grands réseaux, fonctionne aussi très bien sur une cible unique. 
@@ -495,7 +495,7 @@ Wireshark est un sniffer. Un sniffer est un programme qui écoute sur le réseau
 - en cliquant sur l'une des trames on voit que Wireshark sépare les éléments de chacune des couches du modèle OSI
 - on peut voir le contenu de chacune des couches en cliquant sur le triangle en face d'une couche
 
-[infos sur wireshark](httpsopenclassrooms.comfrcourses857447-apprenez-le-fonctionnement-des-reseaux-tcp-ip855562-rendre-mes-applications-joignables-sur-le-reseau)
+[infos sur wireshark](https://openclassrooms.com/fr/courses/857447-apprenez-le-fonctionnement-des-reseaux-tcp-ip/855562-rendre-mes-applications-joignables-sur-le-reseau)
 
 ````
 apt-get install wireshark
@@ -516,7 +516,7 @@ tcpdump -i eth0 -n port 80 and host addripquonveutecouter #on ecoute le port 80 
 ARP poisoning is an attack that is accomplished using the technique of ARP spoofing. 
 ARP protocol   protocole utilisé pour traduire une adresse de protocole de couche réseau (adresse IPv4) en une adresse de protocole de couche de liaison (adresse MAC). 
 
-[Ettercap doc reference](httpswww.irongeek.comi.phppage=backtrack-3-manettercap)
+[Ettercap doc reference](https://www.irongeek.com/i.php?page=backtrack-3-man/ettercap)
 ````
 sudo ettercap -T -S -i eth0 -M arpremote addrmachinecible addrrouteur
 addrmachinecible = target1
@@ -531,9 +531,9 @@ lancer mitm attack
 ````
 The principles  and techniques of a MiTM attack remain the same as with arpspoof  with the small exception of the ip_forward. Unlike arpspoof, ettercap does not use ip forwarding in the Linux kernel, but instead uses it own module to forward IP packets
 
-httpwww.kali-linux.frforumindex.phptopic=3948.0
+http://www.kali-linux.fr/forum/index.php?topic=3948.0
 
-httpwww.kali-linux.frforumindex.phptopic,3822.0.html
+http://www.kali-linux.fr/forum/index.php/topic,3822.0.html
 
 - on peut faire la meme avec arpspoof et dnsspoof
 Si y a des problemes lors du ping et que le forwarding des paquets n'est pas active 
@@ -609,11 +609,11 @@ pgrep -lf python #voir les scripts python qui tournent
 kill -9 pid #kill le processus
 ```
 
-[msfvenom tutorial with different payloads exemples](httpswww.hackingarticles.inmsfvenom-tutorials-beginners)
+[msfvenom tutorial with different payloads exemples](https://www.hackingarticles.in/msfvenom-tutorials-beginners/)
 
-Payloads encoded with Base64, easily detected by antivirus, httpsnull-byte.wonderhowto.comhow-tohacking-macos-create-undetectable-payload-0189715
+Payloads encoded with Base64, easily detected by antivirus, https://null-byte.wonderhowto.com/how-to/hacking-macos-create-undetectable-payload-0189715/
 Payloads connus parce que classiques sur metasploit. -- Encrypting Better Than Encoding. Par exemple avec Armor voir tuto en dessous
-[Video tuto Create Undetectable Payloads for macOS Computers with Tokyoneon's Armor](httpswww.youtube.comwatchv=qgroUbiuNTU&t=1s)
+[Video tuto Create Undetectable Payloads for macOS Computers with Tokyoneon's Armor](https://www.youtube.com/watch?v=qgroUbiuNTU&t=1s)
 
 
 #### Denial-of-Service, Session Hijacking, SQL injection ..
